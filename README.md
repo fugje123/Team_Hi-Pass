@@ -209,6 +209,7 @@ https://youtu.be/L7W-cCmu4bI
 
 # **Object Detection**
 [DCMotor Human_Trackking](https://youtu.be/El-TT31SUvM)<br>
+[DCMotor Human_Trackking2](https://www.youtube.com/watch?v=1wfB_Xf1-L8)
 ## 1. Object Detection 순서
   1) 인식할 객체Dataset 수집
   2) 알맞은 Framwork 또는 Model 선정
