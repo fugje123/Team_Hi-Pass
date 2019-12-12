@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My Brustar</string>
+    <string name="server_ip">192.168.112.91</string> <!--ip주소 변경-->
+</resources>

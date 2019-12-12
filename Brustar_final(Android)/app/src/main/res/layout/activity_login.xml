@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#FFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <!-- title image -->
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/dog_second"/>
+        <!--title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My \nBrustar"
+            android:textSize="35dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+
+        <!-- id edit text // id = id_edit -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edit_corner"
+        android:id="@+id/id_edit"
+        android:drawableLeft="@drawable/id_image"
+        android:padding="7dp"
+        android:lines="1"
+        android:drawablePadding="5dp"
+        android:hint="ID"/>
+        <!-- password edit text // id = password_edit -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edit_corner"
+        android:id="@+id/password_edit"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/password_image"
+        android:padding="7dp"
+        android:inputType="textPassword"
+        android:lines="1"
+        android:drawablePadding="5dp"
+        android:hint="PASSWORD"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <!-- Auto Login CheckBox // id = auto_check -->
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auto Login"
+            android:textSize="15dp"
+            android:id="@+id/auto_check"/>
+        <!-- change activity to SignUpActivity  // id = to_signup -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="#636262"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/underline"
+            android:textSize="15dp"
+            android:id="@+id/to_signup"
+            android:onClick="SignClick"/>
+    </LinearLayout>
+
+        <!-- Login Button  // id = login_button -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/button_corner"
+            android:text="LOGIN"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:id="@+id/login_button"
+            android:layout_marginTop="15dp"
+            android:onClick="LoginClick"/>
+
+    </LinearLayout>
+</LinearLayout>

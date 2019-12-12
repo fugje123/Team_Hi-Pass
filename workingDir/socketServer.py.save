@@ -1,0 +1,45 @@
+#-*- coding: utf-8 -*-
+
+import socket
+import struct
+import time
+import serial
+
+
+ser = serial.Serial('/dev/ttyUSB0',9600)
+while True:
+	newInput = ser.readline()
+	if newInput<1:
+		 
+
+port = 5517
+
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+sock.bind(('',port))
+
+print("server start")
+##SAP_S
+while True:
+    data, info = sock.recvfrom(55555)
+    checkWarning=open('/home/pi/workingDir/info.txt','r')
+    warningData = f.read()
+    if data.decode() == 'Audio On':
+            print("Audio")
+            continue
+    if data.decode() == 'Audio Off':
+            print("Audio Off")
+            continue
+    if warningData == '1':
+            sock.sendto(data, info)
+            print("WARNING")
+            checkWarning.close()
+            time.sleep(5)
+            continue
+    if warningData == '0':
+            safe = 'safe'.encode()
+            sock.sendto(safe, info)
+            print("SAFE")
+            checkWarning.close()
+            time.sleep(5)
+            continue
+

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            android:background="@color/setting"
+            android:layout_marginTop="90dp"
+            >
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/setting"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Setting"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:gravity="left"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+    <!-- Security Mode checkbox-->
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="#8A92D3"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Security Mode"
+            android:textSize="17dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/radioGruop1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ON"
+                android:id="@+id/sm_check1"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OFF"
+                android:id="@+id/sm_check2"
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <!-- Stop Mode checkbox-->
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="#495394"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop Mode    "
+            android:textSize="17dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+        <!--Device Power checkbox (on) // id= pc_check1 !-->
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/radioGruop2"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ON"
+                android:id="@+id/st_check1"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OFF"
+                android:id="@+id/st_check2"
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+    <!-- logout // id = logout !-->
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="LOGOUT"
+        android:textSize="17dp"
+        android:textColor="#FFFF"
+        android:background="#353A5F"
+        android:id="@+id/logout"/>
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="right"
+        android:src="@drawable/dog_first"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="20dp"/>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+import time
+import os
+import webbrowser
+
+f = open("/home/pi/Hi-Pass/python-docs-samples/speech/microphone/nlp_result.txt","r")
+
+text = (f.read()).split(' ')
+
+for i in text:
+    if 'turn' in i:
+        for j in text:
+            if 'youtub' in j:
+                    webbrowser.open("https://www.youtube.com/watch?v=C9zOz6NkiYg")
+            if 'light' in j:
+    if 'clos' in i:
+        for j in text:
+            if 'youtub' in j:
+                os.system("pkill chromium")
+
+    if 'weath' in i:
+        for j in text:
+            if 'today' in j:
+                os.system("python3 ~/Hi-Pass/python-docs-samples/speech/microphone/weather.py")
+                os.system("mpg321 weather.mp3")
+                break
+            ## motor access need to turning on light using tts -youngjun-     
+f.close()
+os.system("python /home/pi/Hi-Pass/python-docs-samples/speech/microphone/transcribe_streaming_mic.py")
+

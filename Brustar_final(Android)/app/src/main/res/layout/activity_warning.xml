@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WarningActivity"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <!-- CCTV 연동 필요 !-->
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_marginTop="150dp"
+    android:id="@+id/img"
+    />
+
+    <!--  capture // id = capture !-->
+    <TextView
+        android:layout_marginTop="45dp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="start|center"
+        android:text="capture"
+        android:textSize="25dp"
+        android:textColor="#FFFF"
+        android:background="#353A5F"
+        android:id="@+id/capture"
+        android:drawableLeft="@drawable/ic_camera_black_24dp"
+        android:paddingLeft="55dp"
+        android:drawablePadding="5dp"/>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#395470</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorBlack">#000000</color>
+    <color name="background">#D6D6D6</color>
+    <color name="setting">#BEC3EB</color>
+    <color name="cctv">#395A91</color>
+
+</resources>

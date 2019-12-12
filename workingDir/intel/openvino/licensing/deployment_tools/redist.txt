@@ -1,0 +1,1 @@
+Intel® Deep Learning Deployment Toolkit is released in terms of ISSL license and content is redistributable: <install_root>\deployment_tools\*

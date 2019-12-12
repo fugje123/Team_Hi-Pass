@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:background="#FFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- title image -->
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/dog_second"/>
+            <!--title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textSize="35dp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="40dp"/>
+
+        </LinearLayout>
+
+        <!-- sign id edit text // id = sign_id -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/edit_corner"
+            android:id="@+id/sign_id"
+            android:drawableLeft="@drawable/id_image"
+            android:padding="7dp"
+            android:textSize="15dp"
+            android:lines="1"
+            android:drawablePadding="5dp"
+            android:hint="ID"/>
+        <!-- sign password edit text // id = sign_password -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/edit_corner"
+            android:id="@+id/sign_password"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/password_image"
+            android:hint="PASSWORD"
+            android:drawablePadding="5dp"
+            android:textSize="15dp"
+            android:padding="7dp"
+            android:inputType="textPassword"
+            android:lines="1"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <!-- check sign password edit text // id = check_password -->
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:background="@drawable/edit_corner"
+                android:id="@+id/check_password"
+                android:drawableLeft="@drawable/password_image"
+                android:drawablePadding="5dp"
+                android:hint="CONFIRM PASSWORD"
+                android:textSize="15dp"
+                android:padding="7dp"
+                android:inputType="textPassword"
+                android:lines="1"
+                />
+            <!-- Password Check Button  // id = pw_check_button -->
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/pwcheck"
+                android:src="@drawable/check"
+                android:id="@+id/pw_check_button"
+                android:layout_marginLeft="14dp"
+                />
+
+        </LinearLayout>
+
+
+        <!-- device code edit text // id = device_code -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/edit_corner"
+            android:id="@+id/device_code"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/device"
+            android:textSize="15dp"
+            android:hint="DEVICE CODE"
+            android:drawablePadding="5dp"
+            android:padding="7dp"
+            android:inputType="text"
+            android:lines="1"/>
+        <!-- SignUp Button  // id = sign_up_button -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/button_corner"
+            android:text="Sign Up"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:id="@+id/sign_up_button"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+</LinearLayout>
